@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_16b98847eba84480974669c9e74197aa {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_16b98847eba84480974669c9e74197aa" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_16b98847eba84480974669c9e74197aa = L.map(
+                                  'map_16b98847eba84480974669c9e74197aa',
+                                  {center: [37.09024,-95.712891],
+                                  zoom: 4,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_45b723ad7a25492aabdfcf02762b23c9 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_16b98847eba84480974669c9e74197aa);
+        
+    
+            var feature_group_0754f1438e01464ca2bf4b40043e8cec = L.featureGroup(
+                ).addTo(map_16b98847eba84480974669c9e74197aa);
+        
+    
+
+            var marker_8f3421c24c92435091afbdd7fccd16ba = L.marker(
+                [37.09024,-95.712891],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0754f1438e01464ca2bf4b40043e8cec);
+            
+    
+
+                var icon_f4616ef75d3c427c87e21f2552a354ce = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8f3421c24c92435091afbdd7fccd16ba.setIcon(icon_f4616ef75d3c427c87e21f2552a354ce);
+            
+    
+            var popup_a539f4f56ee647e286be8f16ece60d57 = L.popup({maxWidth: '300'});
+
+            
+                var html_1407870d9256481f8d009b23dfdef5f2 = $('<div id="html_1407870d9256481f8d009b23dfdef5f2" style="width: 100.0%; height: 100.0%;">msretail</div>')[0];
+                popup_a539f4f56ee647e286be8f16ece60d57.setContent(html_1407870d9256481f8d009b23dfdef5f2);
+            
+
+            marker_8f3421c24c92435091afbdd7fccd16ba.bindPopup(popup_a539f4f56ee647e286be8f16ece60d57);
+
+            
+        
+    
+
+            var marker_9fb36d8a313e44e3b50e2a54eb5ddb87 = L.marker(
+                [47.6062095,-122.3320708],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0754f1438e01464ca2bf4b40043e8cec);
+            
+    
+
+                var icon_21d4c437e7024ad48bff8a54359a9477 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9fb36d8a313e44e3b50e2a54eb5ddb87.setIcon(icon_21d4c437e7024ad48bff8a54359a9477);
+            
+    
+            var popup_56a47090da3f4f989cf8756b2c919920 = L.popup({maxWidth: '300'});
+
+            
+                var html_78fde4a4c98b4dc783bbc0e6115aa0d6 = $('<div id="html_78fde4a4c98b4dc783bbc0e6115aa0d6" style="width: 100.0%; height: 100.0%;">SamsungMobileUS</div>')[0];
+                popup_56a47090da3f4f989cf8756b2c919920.setContent(html_78fde4a4c98b4dc783bbc0e6115aa0d6);
+            
+
+            marker_9fb36d8a313e44e3b50e2a54eb5ddb87.bindPopup(popup_56a47090da3f4f989cf8756b2c919920);
+
+            
+        
+    
+            var layer_control_af5ac10e113a42e3b6fb2a85fb0ac8e8 = {
+                base_layers : { "openstreetmap" : tile_layer_45b723ad7a25492aabdfcf02762b23c9, },
+                overlays : { "Friends" : feature_group_0754f1438e01464ca2bf4b40043e8cec, }
+                };
+            L.control.layers(
+                layer_control_af5ac10e113a42e3b6fb2a85fb0ac8e8.base_layers,
+                layer_control_af5ac10e113a42e3b6fb2a85fb0ac8e8.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_16b98847eba84480974669c9e74197aa);
+        
+</script>
