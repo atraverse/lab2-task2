@@ -8,7 +8,9 @@ from location import point
 app = Flask(__name__, template_folder='template')
 
 def main_c(name):
-
+    """
+    The main function for finding information from Twitter
+    """
     TWITTER_URL = 'https://api.twitter.com/1.1/friends/list.json'
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
@@ -24,7 +26,7 @@ def main_c(name):
         loc_friends.append(u['location'])
     point(loc_friends, friends)
 #main_c('Microsoft')
-
+#Flask 
 @app.route('/')
 def my_form():
     return render_template('index.html')
